@@ -1,0 +1,31 @@
+:root {
+  --black: #0f0a0a;
+  --red: #ff0336;
+  --white: #fcfcfc;
+}
+.gallery-Container {
+  width: 100%;
+}
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.btnContainer {
+  text-align: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px;
+}
+.btnContainer button {
+  font-size: 18px;
+  padding: 8px 15px;
+}
+.gallery-images img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}

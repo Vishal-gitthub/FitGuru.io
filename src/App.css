@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+}
+:root {
+  --black: #0f0a0a;
+  --red: #ff0336;
+  --white: #fcfcfc;
+}
+/* global style  */
+.btnDesign {
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 1px solid rgba(172, 172, 172, 0.42);
+  box-shadow: inset 0 0 0 0 var(--red);
+  transition: ease-in-out 0.4s;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+  border-radius: 25px;
+}
+.btnDesign:hover {
+  box-shadow: inset 0 100px 0 0 var(--red);
+  color: var(--white);
+}
+.m-t {
+  margin-top: 10px;
+}
+
+/* -----------header img style -------- */
+.headerImg {
+  width: 100%;
+}
+.headerImg img {
+  width: 100%;
+}
+
+.headerImg h1 {
+  position: relative;
+  bottom: 70px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+/* global style end  */
+
+.suspense-Wd {
+  width: 97vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* HTML: <div class="loader"></div> */
+.suspense {
+  width: fit-content;
+
+  font-weight: bold;
+  font-family: monospace;
+  white-space: pre;
+  font-size: 30px;
+  line-height: 1.2em;
+  height: 1.2em;
+  overflow: hidden;
+}
+.suspense:before {
+  content: "Loading...\A⌰oading...\A⌰⍜ading...\A⌰⍜⏃ding...\A⌰⍜⏃⎅ing...\A⌰⍜⏃⎅⟟ng...\A⌰⍜⏃⎅⟟⋏g...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔";
+  white-space: pre;
+  display: inline-block;
+  animation: l39 1s infinite steps(11) alternate;
+}
+
+@keyframes l39 {
+  100% {
+    transform: translateY(-100%);
+  }
+}

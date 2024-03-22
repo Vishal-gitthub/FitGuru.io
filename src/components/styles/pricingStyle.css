@@ -1,0 +1,138 @@
+:root {
+  --black: #0f0a0a;
+  --red: #ff0336;
+  --white: #fcfcfc;
+}
+.headingCont{
+    text-align: center;
+}
+.secHeading{
+    position: relative;
+    bottom: 30px;
+}
+.pricingChartContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.p-cText {
+  position: relative;
+  bottom: 30px;
+}
+.priceHeading h1 {
+  letter-spacing: 1px;
+}
+.pricingCards {
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+  margin: 40px 0;
+
+}
+.priceCard1 {
+  min-width: 230px;
+  max-width: 350px;
+  height: auto;
+  background: var(--white);
+  padding-bottom: 10px;
+  margin-top: 25px;
+  box-shadow: 0 4px 8px rgba(78, 78, 78, 0.408);
+  text-align: center;
+}
+.priceCard1 img {
+  width: 100%;
+}
+.cardHeading {
+  background-color: var(--white);
+  display: inline-flex;
+  color: var(--black);
+  padding: 5px 10px;
+  position: relative;
+  bottom: 32px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.rs-Sym {
+  font-size: 24px;
+  position: relative;
+  bottom: 15px;
+  color: rgba(63, 63, 63, 0.9);
+}
+.pr {
+  color: var(--black);
+  font-weight: 800;
+  font-size: 42px;
+}
+.perMonth {
+  font-size: 18px;
+  position: relative;
+  top: 15px;
+  color: rgba(63, 63, 63, 0.9);
+}
+.card_list {
+  margin: 0;
+  padding: 0;
+}
+.card_list li {
+  list-style-type: none;
+  color: rgb(75, 75, 75);
+  padding: 15px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.txt-bold {
+  font-weight: 800 !important;
+  color: var(--red) !important;
+  font-size: 18px !important;
+}
+.community{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    text-align: center;
+    margin: auto;
+}
+.community h1{
+    font-size: 3em;
+}
+.communitySummary{
+    margin: 20px;
+}
+.communityCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+}
+.comCard{
+    border-right: 1px solid rgb(75, 75, 75);
+    padding-right: 23px;
+}
+.comCard span{
+    background-color: var(--red);
+    color: var(--white);
+    padding: 2px 5px;
+    margin-right:5px;
+    border-radius: 5px;
+}
+@media (max-width:768px) {
+    .pricingCards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .communityCards{
+        flex-direction: column;
+        
+    }
+    .comCard{
+        border: none;
+    }
+    .community h1{
+        font-size: 2em;
+    }
+}

@@ -1,0 +1,229 @@
+:root {
+  --black: #0f0a0a;
+  --red: #ff0336;
+  --white: #fcfcfc;
+}
+
+/* global css */
+.f-w700{
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+/* ------------------------ */
+
+.blogP-Container {
+  padding: 30px 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 120rem;
+}
+.left-container {
+  width: 64%;
+}
+
+.CardContainer {
+  width: 100%;
+  margin: 15px 0;
+}
+.CardContainer img {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.date-author-info {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: rgb(145, 145, 145);
+  margin-top: 6px;
+}
+.date-author-info span {
+  font-weight: 600;
+  color: rgb(197, 197, 197);
+}
+.CardContainer p {
+  color: rgb(145, 145, 145);
+}
+.CardContainer button {
+  margin-top: 11px;
+}
+/* right Container starting here   */
+.right-container {
+  width: 35%;
+}
+.searchBox {
+  display: flex;
+  align-items: center;
+}
+.searchBox input {
+  padding: 17px 10px;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+}
+.searchBox svg {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none;
+  margin-left: -2px;
+  padding: 10px 14px;
+  background-color: var(--red);
+}
+
+/* Weather component  styling */
+.weatherComp{
+  width: 100%;
+}
+.weatherContainer {
+  text-align: center;
+  background-color: rgb(41 41 41);
+}
+.weatherContainer h1{
+  color: var(--red);
+}
+.weatherDesc {
+  display: flex;
+  justify-content: space-around;
+}
+.weatherDesc p {
+  display: flex;
+  align-items: center;
+}
+.rightSideCards h1 {
+  margin: 0;
+}
+.line80px {
+  width: 80px;
+  height: 5px;
+  margin: 0;
+  background: var(--red);
+}
+.ryt-Cards {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 15px;
+}
+.ryt-Cards div {
+  width: 200px;
+}
+.ryt-Cards div img {
+  width: 100%;
+}
+.rightSideCards {
+  background-color: rgb(41, 41, 41);
+  padding: 15px;
+  margin: 15px 0;
+}
+.card1Txt span {
+  color: rgba(184, 184, 184, 0.856);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.card1Txt p {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+.ryt-Cards {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.377);
+}
+.tagsContainer {
+  background-color: rgb(41, 41, 41);
+  padding: 40px 20px;
+}
+.tagsContent {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+.tagsContent span {
+  padding: 4px 9px;
+  background: var(--black);
+}
+.tagsContent span:hover {
+  color: var(--red);
+  transition: 0.3s;
+}
+.discountBannerCont {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  height: 500px;
+}
+.discountBanner {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../images/blogPageImages/sidebarDisBg.png");
+}
+.discount {
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  width: 60px;
+  height: 60px;
+  background-color: var(--black);
+  margin: 10px 0 0 20px;
+  padding: 10px;
+}
+.discount img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+}
+
+.dis-price h1 {
+  position: relative;
+  left: 20px;
+
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: -2px;
+}
+.dis-price p {
+  position: relative;
+  left: 20px;
+  bottom: 40px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .blogP-Container {
+    flex-direction: column;
+  }
+  .left-container {
+    width: 100%;
+  }
+  .right-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

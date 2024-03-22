@@ -1,0 +1,67 @@
+.contactPageContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.leftSideContent {
+  width: 50%;
+  margin: auto;
+}
+.rightSideContent {
+  width: 50%;
+  margin: auto;
+  box-sizing: border-box;
+}
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 500px;
+  background-color: rgba(27, 27, 27, 0.582);
+}
+.card input {
+  width: 90%;
+  font-size: 18px;
+  padding: 10px 10px;
+  outline: none;
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  border-bottom: 1px solid gray;
+}
+.formLine {
+  width: 200px;
+  height: 3px;
+  background-color: var(--red);
+}
+.SelectYourClass {
+  padding: 10px 20px;
+  outline: none;
+  background: transparent;
+  color: var(--white);
+}
+.classOption {
+  background-color: var(--black);
+  padding: 10px;
+}
+.mapArea {
+  width: 100%;
+  overflow: hidden;
+}
+.mapArea iframe {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .contactPageContent {
+    flex-direction: column;
+  }
+  .leftSideContent {
+    width: 90%;
+    text-align: center;
+  }
+  .rightSideContent {
+    width: 90%;
+  }
+}
