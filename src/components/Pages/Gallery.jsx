@@ -36,10 +36,10 @@ const Gallery = () => {
           <NavLink to={"/gallery"}>
             <button>1</button>
           </NavLink>
-          <NavLink to={"/gal-Page2"}>
+          <NavLink to={"/galpage"}>
             <button>2</button>
           </NavLink>
-          <NavLink to={"/gal-Page2"}>
+          <NavLink to={"/galpage"}>
             <button className="nextBtn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
