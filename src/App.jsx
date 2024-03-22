@@ -42,42 +42,43 @@ const SignUp = lazy(() => import("./components/Pages/LoginP-Component/SignUp"));
 
 const App = () => {
   return (
-    <Router>
-      <div>
-        <Suspense
-          fallback={
-            <div className="suspense-Wd">
-              <div className="suspense"></div>
-            </div>
-          }
-        >
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/classes" element={<Classes />} />
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/signUp" element={<SignUp />} />
-            <Route path="/gal-Page2" element={<GalleryPage2 />} />
+   <Router>
+  <div>
+    <Suspense
+      fallback={
+        <div className="suspense-Wd">
+          <div className="suspense"></div>
+        </div>
+      }
+    >
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/classes" element={<Classes />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/signUp" element={<SignUp />} /> 
+        <Route path="/gal-Page2" element={<GalleryPage2 />} />
 
-            <Route path="/schedule" element={<Schedule />}>
-              <Route path="/schedule/monday" element={<Monday />} />
-              <Route path="/schedule/tuesday" element={<Tuesday />} />
-              <Route path="/schedule/wednesday" element={<Wednesday />} />
-              <Route path="/schedule/thursday" element={<Thursday />} />
-              <Route path="/schedule/friday" element={<Friday />} />
-              <Route path="/schedule/saturday" element={<Saturday />} />
-              <Route path="/schedule/sunday" element={<Sunday />} />
-            </Route>
-          </Routes>
-          <Footer />
-        </Suspense>
-      </div>
-    </Router>
+        <Route path="/schedule" element={<Schedule />}>
+          <Route path="monday" element={<Monday />} />
+          <Route path="tuesday" element={<Tuesday />} />
+          <Route path="wednesday" element={<Wednesday />} />
+          <Route path="thursday" element={<Thursday />} />
+          <Route path="friday" element={<Friday />} />
+          <Route path="saturday" element={<Saturday />} />
+          <Route path="sunday" element={<Sunday />} />
+        </Route>
+      </Routes>
+      <Footer />
+    </Suspense>
+  </div>
+</Router>
+
   );
 };
 

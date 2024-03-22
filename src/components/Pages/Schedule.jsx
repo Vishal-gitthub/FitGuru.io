@@ -2,7 +2,7 @@ import React from "react";
 import headBanner from "../images/aboutP-Img/headingBanner.jpg";
 import "../styles/scheduleStyle.css";
 import WeekDays from "./ScheduleComponents/WeekDays";
-import Monday from "./ScheduleComponents/weekComp/Monday";
+import { Outlet } from "react-router-dom";
 const schedule = () => {
   return (
     <div>
@@ -11,6 +11,7 @@ const schedule = () => {
         <h1>BLOG</h1>
       </div>
       <WeekDays />
+      <Outlet/>
     </div>
   );
 };

@@ -1,5 +1,4 @@
 import React from "react";
-import { headBanner } from "../../importedItems/aboutPageImportFiles";
 import backgroundVideo from "../../images/loginPageImg/logBackground.mp4";
 import "../../styles/loginPageStyle.css";
 import { Link } from "react-router-dom";
