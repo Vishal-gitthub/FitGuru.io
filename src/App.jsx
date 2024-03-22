@@ -42,7 +42,6 @@ const SignUp = lazy(() => import("./components/Pages/LoginP-Component/SignUp"));
 
 const App = () => {
   return (
-   <Router>
   <div>
     <Suspense
       fallback={
@@ -77,8 +76,6 @@ const App = () => {
       <Footer />
     </Suspense>
   </div>
-</Router>
-
   );
 };
 
