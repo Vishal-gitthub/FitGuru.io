@@ -11,7 +11,7 @@ const schedule = () => {
         <h1>BLOG</h1>
       </div>
       <WeekDays />
-      <Outlet/>
+      
     </div>
   );
 };

@@ -59,7 +59,7 @@ const SignUp = () => {
             </button>
             <div className="termsNdCondi">
               <p>
-                By creating an account you agree with our{" "}
+                By creating an account you agree with our
                 <a href="#">Terms of Service, Privacy Policy,</a> and our
                 default <a href="#">Notification Settings</a>.
               </p>

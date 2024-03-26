@@ -55,7 +55,7 @@ const GalleryPage2 = () => {
               </svg>
             </button>
           </NavLink>
-          <NavLink to={"/gal-Page2"}>
+          <NavLink to={"/galpage"}>
             <button>2</button>
           </NavLink>
           <NavLink to={"/gallery"}>

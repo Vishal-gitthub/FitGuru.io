@@ -1,8 +1,11 @@
 import React from "react";
+import { useEffect } from "react";
 import "../../../styles/scheduleStyle.css";
-import WeekDays from "../WeekDays";
 import { Outlet } from "react-router-dom";
 const Monday = () => {
+  useEffect(() => {
+    console.log("component is rendering");
+  });
   return (
     <div>
       <div className="scheduleCards-Container">
