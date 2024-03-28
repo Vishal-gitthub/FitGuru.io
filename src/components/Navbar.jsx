@@ -4,10 +4,12 @@ import { NavLink } from "react-router-dom";
 import logo from "../assets/webPageLogo.svg";
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [scrolled, setIsScrolled] = useState(false);
+
+
+  const [scrolled, setIsScrolled] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY > 10) {
         setIsScrolled(false);
       } else {
         setIsScrolled(true);
@@ -16,6 +18,8 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+
 
   const hiddenHandler = () => {
     setIsNavOpen(false);
