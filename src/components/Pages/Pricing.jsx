@@ -171,7 +171,9 @@ const Pricing = () => {
           workouts! Together, we achieve our fitness goals and celebrate
           success.
         </p>
-        <span style={{ fontSize: "10px" ,letterSpacing:'2px',color:'gray' }}>These no. are fetched from an api -demo numbers-</span>
+        <span style={{ fontSize: "10px", letterSpacing: "2px", color: "gray" }}>
+          These no. are fetched from an api -demo numbers-
+        </span>
         <div className="communityCards">
           <div className="comCard">
             <p>

@@ -104,7 +104,7 @@ const Navbar = () => {
                 to={"/classes"}
                 exact="true"
                 className={({ isActive }) =>
-                  `${isActive ? "red" : ""}classes links`
+                  `${isActive ? "red" : ""} classes links`
                 }
               >
                 Classes

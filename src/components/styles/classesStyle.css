@@ -1,6 +1,7 @@
 
 .SliderContainer {
   width: 80%;
+  height: fit-content;
   text-align: center;
   margin: auto;
   box-sizing: border-box;
@@ -8,8 +9,20 @@
 .carouselContainer div img {
   width: 100%;
   object-fit: cover;
-  
+  height: max-content;
 }
+/* Custom CSS file */
+.slick-dots li button {
+  background-color: rgba(0, 0, 0, 0.246); /* Change dot color to red */
+  border-radius: 50%;
+}
+
+/* Optionally, you can change the active dot color */
+.slick-dots li.slick-active button {
+  background-color: rgb(234, 234, 234); /* Change active dot color to green */
+}
+
+
 .classCard {
   display: flex;
   flex-wrap: wrap;

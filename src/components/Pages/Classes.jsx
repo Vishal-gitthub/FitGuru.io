@@ -26,7 +26,7 @@ const Classes = () => {
     <div>
       <div className="headerImg">
         <img src={headerImg} alt="" />
-        <h1>Classes</h1>
+        <h1>CLASSES</h1>
       </div>
       <div className="SliderContainer">
         <Slider {...settings}>

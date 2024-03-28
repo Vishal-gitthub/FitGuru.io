@@ -8,7 +8,7 @@ const schedule = () => {
     <div>
       <div className="headerImg">
         <img src={headBanner} alt="" />
-        <h1>BLOG</h1>
+        <h1>SCHEDULE</h1>
       </div>
       <WeekDays />
       
