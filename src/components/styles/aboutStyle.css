@@ -14,6 +14,7 @@
   display: block;
   margin: 0 auto;
 }
+
 .slick-prev{
   left: 0 !important;
   z-index: 55;
@@ -21,6 +22,7 @@
 .slick-next{
   right: 0 !important;
 } 
+
 .aboutCard {
   display: flex;
   align-items: center;
