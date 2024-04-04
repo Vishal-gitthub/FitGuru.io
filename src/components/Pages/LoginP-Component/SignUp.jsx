@@ -7,10 +7,6 @@ import loginBg from "../../images/loginPageImg/loginBg.jpg";
 const SignUp = () => {
   return (
     <div>
-      <div className="headerImg">
-        <img src={headBanner} alt="" />
-        <h1>BLOG</h1>
-      </div>
       <div className="bgVideo">
         <video src={backgroundVideo} autoPlay muted loop></video>
         <img className="loginBackground-image" src={loginBg} alt="" />

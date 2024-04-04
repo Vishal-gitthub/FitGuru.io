@@ -1,5 +1,7 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth; 
+  scrollbar-width: thin;
+  scrollbar-color: var(--red) #2a2a2a00;
 }
 body {
   margin: 0;
